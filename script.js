@@ -1,13 +1,9 @@
-function decimalToBinary(n) {
+function threeSum(arr, target) {
 // write your code here
-	let arr = [];
-	let target = n;
-	while(target>1){
-		arr.push(target%2);
-		target = Math.floor(target/2);
-	}
-	arr.push(1);
-	return arr.reverse().join("");
+
+	arr.filter((x)=>{
+		return x.toString(2);
+	})
 }
 
 module.exports = threeSum;
